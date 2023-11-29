@@ -46,4 +46,7 @@ const IssuesPage = async () => {
   );
 };
 
+// Render this page in server side, update page data on each request
+export const dynamic = 'force-dynamic';
+
 export default IssuesPage;
