@@ -72,7 +72,12 @@ const IssueForm = ({ issue }: { issue?: Issue }) => {
 
         <ErrorMessage>{errors.description?.message}</ErrorMessage>
 
-        <Button type={'submit'} disabled={isSubmitting}>
+        <Button
+          type={'submit'}
+          disabled={isSubmitting}
+          variant={'solid'}
+          style={{ fill: 'var(--accent-9)' }}
+        >
           {issue ? 'Update Issue' : 'Submit New Issue'}{' '}
           {isSubmitting && <Spinner />}
         </Button>
